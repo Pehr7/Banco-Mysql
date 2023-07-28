@@ -4,8 +4,6 @@ CREATE database Tx_Banc;
 \\user do banco 
 Use Tx_Banc;
 
-
-
 \\criando tabelas 
 CREATE TABLE minha_tabela (
     id INT AUTO_INCREMENT PRIMARY KEY,
