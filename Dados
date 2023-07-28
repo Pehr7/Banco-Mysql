@@ -20,6 +20,6 @@ CREATE TABLE Minha_Tabela (
 INSERT INTO Nome_da_Tabela (nome, idade, email, telefone, endereco) 
 VALUES ('Pedro', '21','pedrohr@gmail.com', '11 96852543', 'Rua campanha gaucha');
 
-\\Visualizar Tabela 
 
+\\Visualizar Tabela 
 SELECT * FROM Nome_da_Tabela 
