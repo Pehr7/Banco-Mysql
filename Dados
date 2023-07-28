@@ -22,4 +22,4 @@ VALUES ('Pedro', '21','pedrohr@gmail.com', '11 96852543', 'Rua campanha gaucha')
 
 
 \\Visualizar Tabela 
-SELECT * FROM Nome_da_Tabela 
+SELECT * FROM Nome_da_Tabela
