@@ -22,4 +22,23 @@ VALUES ('Pedro', '21','pedrohr@gmail.com', '11 96852543', 'Rua campanha gaucha')
 
 
 \\Visualizar Tabela 
-SELECT * FROM Nome_da_Tabela
+SELECT * FROM Nome_da_Tabela;
+
+
+\\Removendo uma Tabela 
+DROP TABLE Nome_Da_Tabela;
+
+
+\\ Alterando dados de uma coluna 
+UPDATE Nome
+SET email = 'Novo_email'
+WHERE id= 1;
+
+
+\\ Add mais uma coluna na tabela 
+ALTER TABLE Nome_Da_Tabela
+ADD idade INT;
+
+\\Removendo uma coluna 
+
+
