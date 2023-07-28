@@ -1,1 +1,15 @@
+\\Criando banco de dados 
+CREATE database Tx_Banc;
 
+\\user do banco 
+Use Tx_Banc;
+
+\\criando tabelas 
+CREATE TABLE minha_tabela (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100),
+    idade INT,
+    email VARCHAR(100),
+    telefone VARCHAR(20),
+    endereco VARCHAR(200)
+);
