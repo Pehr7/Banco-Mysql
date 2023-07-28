@@ -5,7 +5,6 @@ CREATE database Tx_Banc;
 Use Tx_Banc;
 
 \\Criando tabelas 
-
 CREATE TABLE minha_tabela (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100),
@@ -17,6 +16,5 @@ CREATE TABLE minha_tabela (
 
 
 \\Dados em tabela 
-
 INSERT INTO dados (nome, idade, email, telefone, endereco) 
 VALUES ('Pedro', '21','pedrohr@gmail.com', '11 96852543', 'Rua campanha gaucha');
