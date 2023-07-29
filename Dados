@@ -1,11 +1,11 @@
-\\Criando banco de dados 
+\\ Criando banco de dados 
 CREATE database Nome_Banco;
 
-\\user do banco 
+\\ User do banco 
 Use Nome_Banco;
 
 
-\\Criando tabelas 
+\\ Criando tabelas 
 CREATE TABLE Minha_Tabela (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100),
@@ -16,16 +16,16 @@ CREATE TABLE Minha_Tabela (
 );
 
 
-\\Dados em tabela 
+\\ Dados em tabela 
 INSERT INTO Nome_da_Tabela (nome, idade, email, telefone, endereco) 
 VALUES ('Pedro', '21','pedrohr@gmail.com', '11 96852543', 'Rua campanha gaucha');
 
 
-\\Visualizar Tabela 
+\\ Visualizar Tabela 
 SELECT * FROM Nome_da_Tabela;
 
 
-\\Removendo uma Tabela 
+\\ Removendo uma Tabela 
 DROP TABLE Nome_Da_Tabela;
 
 
@@ -39,6 +39,7 @@ WHERE id= 1;
 ALTER TABLE Nome_Da_Tabela
 ADD idade INT;
 
-\\Removendo uma coluna 
 
-
+\\ Removendo uma coluna 
+ALTER TABLE Nome_Da_Tabela
+DROP COLUMN Nome_Da_Coluna;
