@@ -11,7 +11,7 @@ CREATE TABLE Minha_Tabela (
     nome VARCHAR(100),
     idade INT,
     email VARCHAR(100),
-    telefone VARCHAR(20),
+    telefone INT(20),
     endereco VARCHAR(200)
 );
 
