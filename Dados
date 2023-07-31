@@ -30,8 +30,8 @@ DROP TABLE Nome_Da_Tabela;
 
 
 \\ Alterando dados de uma coluna 
-UPDATE Nome
-SET email = 'Novo_email'
+UPDATE Nome_Tabela
+SET Nome_Da_Coluna = 'Novo_dados'
 WHERE id= 1;
 
 
