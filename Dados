@@ -10,15 +10,15 @@ CREATE TABLE Minha_Tabela (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100),
     idade INT,
-    email VARCHAR(100),
     telefone INT(20),
+    email VARCHAR(100),
     endereco VARCHAR(200)
 );
 
 
 \\ Dados em tabela 
-INSERT INTO Nome_da_Tabela (nome, idade, email, telefone, endereco) 
-VALUES ('Pedro', '21','pedrohr@gmail.com', '11 96852543', 'Rua campanha gaucha');
+INSERT INTO Nome_da_Tabela (nome, idade, telefone, email, endereco) 
+VALUES ('Pedro', '21', '11 96852543', 'pedrohr@gmail.com', 'Rua campanha gaucha');
 
 
 \\ Visualizar Tabela 
