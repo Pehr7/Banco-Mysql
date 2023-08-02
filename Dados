@@ -16,7 +16,7 @@ CREATE TABLE Minha_Tabela (
 );
 
 CREATE TABLE usuarios (
-    id bigint primary key auto_increment,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100),
     usuario VARCHAR(50),
     senha VARCHAR(100),
