@@ -16,10 +16,10 @@ CREATE TABLE Minha_Tabela (
 );
 
 CREATE TABLE usuarios (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(100),
-    usuario VARCHAR(50),
-    senha VARCHAR(100),
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(80) not null,
+    usuario VARCHAR(50) not null unique,
+    senha VARCHAR(100) not null,
     telefone VARCHAR(20),
     email VARCHAR(200),
 );
@@ -54,7 +54,7 @@ DROP TABLE Nome_Da_Tabela;
 \\ Alterando dados de uma coluna 
 UPDATE Nome_Tabela
 SET Nome_Da_Coluna = 'Novo_dados'
-WHERE id= 1;
+\\exeplo WHERE id= 1;
 
 
 \\ Add mais uma coluna na tabela 
