@@ -6,7 +6,7 @@ USE Car_Store;
 
 
 \\ Criação de tabela
-CREATE TABLE Carros (
+CREATE TABLE carros (
     id INT AUTO_INCREMENT PRIMARY KEY,
     marca VARCHAR(200) NOT NULL,
     modelo VARCHAR(200) NOT NULL, 
@@ -15,7 +15,7 @@ CREATE TABLE Carros (
     ano INT
 );
 
-CREATE TABLE Clientes (
+CREATE TABLE clientes (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(200) NOT NULL,
     telefone VARCHAR(15),
@@ -24,7 +24,7 @@ CREATE TABLE Clientes (
 );
 
 
-CREATE TABLE Transacoes (
+CREATE TABLE transacoes (
     id INT AUTO_INCREMENT PRIMARY KEY,
     carro_id INT,
     cliente_id INT,
