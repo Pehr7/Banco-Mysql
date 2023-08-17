@@ -7,7 +7,6 @@ USE ;
 
 \\ Criação de tabela
 CREATE TABLE Carros (
-
     id INT AUTO_INCREMENT PRIMARY KEY,
     marca VARCHAR(255) NOT NULL,
     modelo VARCHAR(255) NOT NULL, 
@@ -18,7 +17,6 @@ CREATE TABLE Carros (
 
 
 CREATE TABLE Clientes (
-
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(200) NOT NULL,
     telefone VARCHAR(15),
@@ -28,7 +26,6 @@ CREATE TABLE Clientes (
 
 
 CREATE TABLE Transacoes (
-
     id INT AUTO_INCREMENT PRIMARY KEY,
     carro_id INT,
     cliente_id INT,
