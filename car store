@@ -6,30 +6,56 @@ USE Car_Store;
 
 
 \\ Criação de tabela
-CREATE TABLE carros (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    marca VARCHAR(200) NOT NULL,
-    modelo VARCHAR(200) NOT NULL, 
-    preco DECIMAL(10, 2),
-    disponivel BOOLEAN,
-    ano INT
+Create table carros (
+  id INT auto_increment primary key,
+  marca varchar(200) not null,
+  modelo varchar(200) not null,
+  preco decimal (10,2),
+  disponivel boolean,
+  ano int
+  
 );
 
-CREATE TABLE clientes (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(200) NOT NULL,
-    telefone VARCHAR(15),
-    email VARCHAR(200),
-    endereco VARCHAR(200)
+Create table cliente (
+  id INT auto_increment primary key,
+  nome varchar(200) not null,
+  telefone varchar(15),
+  email varchar(200),
+  endereco varchar(200)
+  
 );
 
+Create table transacoes (
+  id INT auto_increment primary key,
+  carros_id INT,
+  cliente_id INT,
+  data_transacao date,
+  preco_venda decimal(10,2),
+  foreign key (carros_id) references carros(id),
+  foreign key (cliente_id) references cliente(id)
 
-CREATE TABLE transacoes (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    carro_id INT,
-    cliente_id INT,
-    data_transacao DATE,
-    preco_venda DECIMAL(10, 2),
-    FOREIGN KEY (carro_id) REFERENCES Carros(id),
-    FOREIGN KEY (cliente_id) REFERENCES Clientes(id)
+);
+
+Create table vendas (
+  id INT auto_increment primary key,
+  total_venda decimal(10.2) not null,
+  valor_pago decimal(10.2) not null,
+  parcela decimal(10.2) not null,
+  cliente_id int,
+  funcionario_id bigint not null,
+  data_hora_cricao datetime default current_timestamp,
+  constraint fk_venda_cliente foreign key(cliente_id) references cliente(id),
+  constraint fk_vendas_funcionario foreign key(funcionario_id) references funcionario(id)
+  
+);
+
+Create table funcionario (
+  id bigint primary key auto_increment,
+  nome varchar(100) not null,
+  usuario varchar(50) not null unique,
+  senha varchar(100) not null,
+  telefone varchar(20),
+  email varchar(200),
+  data_hora_criacao datetime default current_timestamp
+
 );
