@@ -11,8 +11,8 @@ CREATE TABLE Carros (
     marca VARCHAR(200) NOT NULL,
     modelo VARCHAR(200) NOT NULL, 
     preco DECIMAL(10, 2),
-    disponivel BOOLEAN
-    ano INT,
+    disponivel BOOLEAN,
+    ano INT
 );
 
 CREATE TABLE Clientes (
