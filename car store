@@ -8,8 +8,8 @@ USE Car_Store;
 \\ Criação de tabela
 CREATE TABLE Carros (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    marca VARCHAR(255) NOT NULL,
-    modelo VARCHAR(255) NOT NULL, 
+    marca VARCHAR(200) NOT NULL,
+    modelo VARCHAR(200) NOT NULL, 
     preco DECIMAL(10, 2),
     disponivel BOOLEAN
     ano INT,
