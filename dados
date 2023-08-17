@@ -23,20 +23,6 @@ CREATE TABLE usuarios (
     email VARCHAR(200),
 );
 
-CREATE TABLE produtos (
-    id bigint primary key auto_increment,
-    nome VARCHAR(50) not null,
-    descricao VARCHAR(200),
-    preco DECIMAL(11) not null,
-    quantidade int null
-);
-
-CREATE TABLE categoria (
-    id int primary key auto_increment,
-    Nome VARCHAR(50) not null unique,
-    descricao VARCHAR(200)
-);
-
 \\ Dados em tabela 
 INSERT INTO Nome_da_Tabela (nome, telefone, email, endereco) 
 VALUES ('Pedro', '1196852543', 'pedrohr@gmail.com', 'Rua campanha gaucha');
