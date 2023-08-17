@@ -1,5 +1,5 @@
 \\ Criar banco de dados
-CREATE DATABASE Car_ ;
+CREATE DATABASE Car_Store ;
 
 \\ user o banco
 USE ;
