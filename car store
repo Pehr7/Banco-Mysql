@@ -1,8 +1,8 @@
+\\ User o banco
+USE Car_Store;
+
 \\ Criar banco de dados
 CREATE DATABASE Car_Store ;
-
-\\ user o banco
-USE Car_Store;
 
 
 \\ Criação de tabela
