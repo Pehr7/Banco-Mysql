@@ -1,9 +1,8 @@
-\\ Criando banco de dados 
-CREATE database Nome_Banco;
-
 \\ User do banco 
 Use Nome_Banco;
 
+\\ Criando banco de dados 
+CREATE database Nome_Banco;
 
 \\ Criando tabelas 
 CREATE TABLE Minha_Tabela (
@@ -32,10 +31,6 @@ VALUES ('Pedro', '1196852543', 'pedrohr@gmail.com', 'Rua campanha gaucha');
 SELECT * FROM Nome_da_Tabela;
 
 
-\\ Removendo uma Tabela 
-DROP TABLE Nome_Da_Tabela;
-
-
 \\ Alterando dados de uma coluna 
 UPDATE Nome_Tabela
 SET Nome_Da_Coluna = 'Novo_dados'
@@ -45,6 +40,10 @@ SET Nome_Da_Coluna = 'Novo_dados'
 \\ Add mais uma coluna na tabela 
 ALTER TABLE Nome_Da_Tabela
 ADD idade INT;
+
+
+\\ Removendo uma Tabela 
+DROP TABLE Nome_Da_Tabela;
 
 
 \\ Removendo uma coluna 
