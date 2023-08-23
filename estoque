@@ -1,12 +1,11 @@
-\\Criando o Banco
-CREATE database Tx_Banc;
-
 \\ User o banco 
  USE Tx_Banc;
 
+\\Criando o Banco
+CREATE database Tx_Banc;
+
 
 \\Criando Tabelas 
-
 CREATE TABLE categoria (
     id int primary key auto_increment,
     nome VARCHAR(50) not null unique,
@@ -77,4 +76,3 @@ DROP TABLE vendas;
 \\ Dados para a tabela
 INSERT INTO cliente (nome, telefone, endereco) 
 VALUES ('Pedro Henrique', '11 968747111', 'Rua campnha gaucha');
-
