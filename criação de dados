@@ -22,19 +22,18 @@ CREATE TABLE usuarios (
     email VARCHAR(200),
 );
 
-\\ Dados em tabela 
-INSERT INTO Nome_da_Tabela (nome, telefone, email, endereco) 
-VALUES ('Pedro', '1196852543', 'pedrohr@gmail.com', 'Rua campanha gaucha');
-
-
 \\ Visualizar Tabela 
 SELECT * FROM Nome_da_Tabela;
-
 
 \\ Alterando dados de uma coluna 
 UPDATE Nome_Tabela
 SET Nome_Da_Coluna = 'Novo_dados'
 \\exeplo WHERE id= 1;
+
+
+\\ Add dados na tabela 
+INSERT INTO Nome_da_Tabela (nome, telefone, email, endereco) 
+VALUES ('Pedro', '1196852543', 'pedrohr@gmail.com', 'Rua campanha gaucha');
 
 
 \\ Add mais uma coluna na tabela 
@@ -44,7 +43,6 @@ ADD idade INT;
 
 \\ Removendo uma Tabela 
 DROP TABLE Nome_Da_Tabela;
-
 
 \\ Removendo uma coluna 
 ALTER TABLE Nome_Da_Tabela
